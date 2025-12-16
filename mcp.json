@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "mcpServers": {
+    "tavily": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://mcp.tavily.com/mcp/"
+      ],
+      "description": "Tavily Search API - Web search and research capabilities (hardcoded default)",
+      "enabled": true,
+      "isHardcoded": true
+    }
+  },
+  "cliTools": {
+    "qwen": {
+      "enabled": true,
+      "sandbox": false,
+      "description": "Fast reasoning CLI - summarization, analysis, quick tasks"
+    },
+    "gemini": {
+      "enabled": true,
+      "sandbox": false,
+      "description": "Multimodal CLI - design, documentation, complex code"
+    }
+  },
+  "settings": {
+    "expertContentPath": "./knowledge-base",
+    "pyversityIntegration": true,
+    "ragEnabled": true
+  }
+}

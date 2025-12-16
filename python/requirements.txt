@@ -1,0 +1,47 @@
+# Core LangChain/LangGraph
+langchain>=0.3.0
+langchain-core>=0.3.0
+langgraph>=0.2.0
+
+# LLM Providers
+openai>=1.50.0
+
+# RAG with Pyversity diversification
+numpy>=1.26.0
+pyversity>=0.1.0
+
+# IBM Granite via HuggingFace (optional, for granite-hf provider)
+transformers>=4.45.0
+torch>=2.0.0
+
+# VibeVoice-Realtime TTS (microsoft/VibeVoice-Realtime-0.5B)
+# Downloads ~1GB model on first use to HuggingFace cache
+scipy>=1.11.0
+
+# Local embeddings fallback
+sentence-transformers>=2.2.0
+
+# Utilities
+Pillow>=10.0.0
+pydantic>=2.0.0
+httpx>=0.27.0
+websockets>=12.0
+python-dotenv>=1.0.0
+
+# Memori - SQL Native Memory Layer for AI Agents
+# Reference: https://github.com/MemoriLabs/Memori
+memori>=3.0.0
+
+# Gradio UI
+gradio>=4.44.0
+
+# Encrypted settings storage
+cryptography>=41.0.0
+
+# Note: For IBM Granite via Ollama (recommended for local/offline use):
+#   1. Install Ollama: https://ollama.com/download
+#   2. Pull models:
+#      ollama pull granite-embedding:278m   # Embedding (563MB)
+#      ollama pull granite3.1-dense:2b      # LLM (1.6GB, optional)
+#   3. Run: python -m rag.granite_setup --embedding
+

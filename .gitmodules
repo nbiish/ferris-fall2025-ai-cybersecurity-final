@@ -1,0 +1,3 @@
+[submodule "cursor-capstone/backend/hgm_core"]
+	path = cursor-capstone/backend/hgm_core
+	url = https://github.com/metauto-ai/HGM.git
